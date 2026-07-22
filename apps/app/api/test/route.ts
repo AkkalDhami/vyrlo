@@ -6,7 +6,7 @@ export const GET = async () => {
     await logger.error({
       message: "This is an error message",
       importance: "medium",
-      service: "test"
+      service: "test",
     });
     return NextResponse.json({
       message: "Error logged successfully"
